@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Tarea1dew Diego Rodríguez Jacinto</title>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body onload="aviso()">
+    <!-- Para cambiar de color la pagina entera -->
+    <style>
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <script>
+        function darkMode() {
+            var oscuro = document.body;
+            oscuro.classList.toggle("dark-mode");
+        }
+    </script>
+    <!-- Fin cambiar de color la pagina entera -->
+    <div class="fondo">
+        <img class="imagen1" src="hamburguesa-patatas_95419-2005.jpg" width="100px" height="100px">
+        <h1>Hamburguesería Los Llanos de Aridane</h1>
+        <div>
+            <h2>Solo tenemos un plato: </h2>
+        </div>
+        <p>Hamburguesa con patatas.</p>
+        <div>
+            <h2>Ingredientes:</h2>
+        </div>
+        <ol>
+            <b>
+                <li id="ingrediente1">Carne de cerdo: <span>200</span>gr</li>
+            </b>
+            <b>
+                <li id="ingrediente2">Pan brioche: <span>1</span> pan</li>
+            </b>
+            <b>
+                <li id="ingrediente3">Lechuga: <span>10</span>gr</li>
+            </b>
+            <b>
+                <li id="ingrediente4">Tomate: <span>10</span>gr</li>
+            </b>
+            <b>
+                <li id="ingrediente5">Mahonesa: <span>1</span> cucharada</li>
+            </b>
+            <b>
+                <li id="ingrediente6">Queso chedar: <span>2</span> lonchas</li>
+            </b>
+            <b>
+                <li id="ingrediente7">Patatas fritas de bolsa: <span>150</span>gr</li>
+            </b>
+        </ol>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <button onclick="saludar()">Haz tu pedido</button>
+        <button onclick="darkMode()">Modo Oscuro</button>
+        <hr style="height:2px;width:300px;border-width:0;color:rgb(0, 0, 0);background-color:rgb(0, 0, 0)">
+        <footer>
+            <h4>Autor: Diego Rodríguez Jacinto.</h4>
+        </footer>
+        <hr style="height:2px;width:500px;border-width:0;color:rgb(0, 0, 0);background-color:rgb(0, 0, 0)">
+    </div>
+</body>
+
+</html>
