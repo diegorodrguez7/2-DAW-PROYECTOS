@@ -32,21 +32,20 @@
             ?>
         </p>
         <hr>
-    Resta
+    Sueldo
         <p>
             <?php 
-            $numero1 = $_POST["numero1"];
-            $numero2 = $_POST["numero2"]; 
-            echo $numero1 - $numero2;
+            $sueldo = $_POST["sueldo"];
+            echo $sueldo;
             ?>
         </p><br>
         <hr>
-    Suma
+    SueldoIPC
         <p>
             <?php 
-            $numero1 = $_POST["numero1"];
-            $numero2 = $_POST["numero2"];
-            echo $numero1 + $numero2;
+            $ipc= $_POST["ipc"];
+            $sueldo = $_POST["sueldo"];
+            echo $sueldo + $sueldo * $ipc / 100;
             ?>
         </p><br>
         <hr>
