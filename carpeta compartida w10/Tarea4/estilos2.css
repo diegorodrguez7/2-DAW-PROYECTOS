@@ -11,8 +11,15 @@ h1{
 
 .cuadro{
     border-radius:10px;
-    background-color:#ccc;
     padding: 10px;
+	width:100%;
+	margin-top:12px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+	text-align: center;
 }
 
 p{
@@ -32,4 +39,9 @@ body{
 	border-radius:10px;
 	margin:auto;
 	background-color:rgb(255, 255, 255);
+}
+
+.cuadro:hover{
+	cursor:pointer;
+    background-color: rgb(76, 195, 211);
 }
