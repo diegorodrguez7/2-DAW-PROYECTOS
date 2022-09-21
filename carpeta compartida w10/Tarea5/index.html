@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formulario con PHP</title>
+</head>
+<body>
+    <h2>Ejercicio 5.</h2>
+    <a href="../" target="_self">Volver</a>
+    <form action="index2.php" method="post">
+        <h1>COLOR PICKER</h1>
+        <div>
+            <input type="radio" name="aaa" value="green">VERDE<br>
+            <hr>
+        </div>
+        <div>
+            <input type="radio" name="aaa" value="red">ROJO<br>
+            <hr>
+        </div>
+        <div>
+            <input type="radio" name="aaa" value="yellow">AMARILO<br>
+            <hr>
+        </div>
+        <div>
+            <input type="radio" name="aaa" value="orange">NARANJA<br>
+            <hr>
+        </div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+    <form action="index2.php" method="post">
+        <div>
+            <input type="color" name="aaa" value="#f2f2f2"> <--Elige el color que quieras.<br>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>
