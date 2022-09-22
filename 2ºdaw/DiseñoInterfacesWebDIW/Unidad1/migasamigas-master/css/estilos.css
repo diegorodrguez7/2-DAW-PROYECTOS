@@ -1,0 +1,229 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ff4b57;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.circulo {
+    position: absolute;
+    left: 0px;
+    width: 80%;
+    height: 1000px;
+    background-color: #fff;
+    z-index: 10;
+    border-radius: 100%;
+}
+.app {
+    z-index: 20;
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+.caja_izq {
+    background-color: #ff4b57;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.caja_der {
+    display: grid;
+    grid-template-columns: 100px 1fr 125px;
+}
+.caja_der > * {
+}
+.titulo {
+    width: 100px;
+    color: white;
+    font-size: 34px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 20px;
+}
+.rojizo {
+    color: #ff4b57;
+    align-items: flex-start;
+}
+
+.social {
+    width: 100%;
+    color: white;
+    display: grid;
+    justify-content: center;
+    grid-gap: 10px;
+}
+
+.social svg {
+    cursor: pointer;
+}
+
+.social svg:hover {
+    transform: scale(1.09);
+}
+
+.idiomas {
+    display: grid;
+    grid-template-columns: 32px 32px;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+    padding: 10px 0;
+    user-select: none;
+}
+.idiomas > a {
+    display: block;
+    font-size: 12px;
+    height: 32px;
+    width: 32px;
+    border: 1px solid white;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+.idiomas a:hover {
+    background-color: #fff;
+    color: #ff4b57;
+}
+.secciones {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+.secciones > div:nth-child(1) {
+    height: 200px;
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+}
+.secciones .seccion {
+    border: 1px solid white;
+    display: grid;
+    place-items: center;
+    border-right: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.seccion:hover, .seccion.selected {
+    background-color: #fff;
+    color: #ff4b57;
+    transform: scale(1.09);
+}
+.contenido {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+.contenido .menu {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25%;
+    font-size: 13px;
+    font-weight: bold;
+}
+.menu a:hover {
+    color: #ff4b57;
+}
+.menu .selected {
+    color: #ff4b57;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.catalogo {
+    display: grid;
+    place-items: center;
+}
+.catalogo img {
+    transition: .3s;
+    transition-timing-function: linear;
+}
+.catalogo img:hover {
+    transform: scale(1.1);
+}
+
+.info_contaco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cursor_hand {
+    cursor: grab;
+}
+.producto {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+.catalogos {
+    position: relative;
+    padding: 100px;
+}
+.catalogos .enlaces {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.catalogos a {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: #ff4b57;
+    font-size: 28px;
+    display: grid;
+    place-items: center;
+    border-radius: 4px;
+    background-image: url("../imagenes/cakespattern.png");
+    background-position: 29px -32px;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
+    font-weight: bold;
+}
+.catalogos a:nth-child(2) {
+    background-position: 28px 113px;
+}
+.catalogos a:nth-child(1) {
+    background-image: url("../imagenes/breadbg.png");
+    background-position: 8px -42px;
+    background-size: cover;
+}
+.catalogos a:nth-child(3) {
+    background-image: url("../imagenes/foodbg.png");
+    background-position: 8px -42px;
+    background-size: cover;
+}
+.info_nosotros {
+    text-align: justify;
+    padding: 100px
+}
