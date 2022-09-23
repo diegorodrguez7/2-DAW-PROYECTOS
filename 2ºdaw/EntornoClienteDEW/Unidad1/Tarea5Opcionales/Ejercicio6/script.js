@@ -23,6 +23,9 @@
 // Para ello tenemos que hacer un bucle que empiece en 1 y termine en 6 y en cada
 // iteración escribiremos el encabezado que toca.
 
-function funcionUno(){
-    
+function funcionUno() {
+  for (i = 1; i <= 6; i++) {
+    document.getElementById("escribir" + i).innerHTML = 
+    ("Encabezado de nivel " + i);
+  }
 }
