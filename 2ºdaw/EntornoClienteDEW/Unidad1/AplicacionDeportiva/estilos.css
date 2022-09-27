@@ -1,0 +1,57 @@
+body {
+    background: linear-gradient(90deg, rgb(219, 184, 159) 0%, rgb(223, 156, 101) 45%, rgb(232, 118, 47) 100%);
+}
+
+#cajafuera {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.caja {
+    width: 700px;
+    height: 225px;
+    border: 5px black solid;
+    background: rgb(226, 209, 181);
+    margin-top: 10px;
+}
+
+h2 {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+}
+
+p {
+    text-align: center;
+    font-size: 15px;
+}
+
+button.centrado {
+    width: 110px;
+    /* Para que no se rompa en dos líneas, y lo translade tal cual. */
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-width: 1px;
+    color: rgb(0, 0, 0);
+    border-color: #eeb44f;
+    cursor: pointer;
+    font-weight: bold;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    box-shadow: inset 0px 1px 0px 0px #fce2c1;
+    text-shadow: inset 0px 1px 0px #cc9f52;
+    background: linear-gradient(#ffc477, #fb9e25);
+    padding: 10px;
+}

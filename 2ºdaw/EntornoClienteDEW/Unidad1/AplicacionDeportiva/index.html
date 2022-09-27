@@ -7,24 +7,26 @@
     <link rel="icon" type="image/png" href="img/favicon-32x32.png"/>
     <link rel="stylesheet" href="estilos.css">
     <script src="script.js"></script>
-    <title>IMC // FCM</title>
+    <title>IMC // FCM // CE</title>
 </head>
 <body>
-    <h1>Calculadoras</h1>
-    <div>
-        <h2>IMC</h2>
-        <button onclick="calcularImc()">Calcular IMC</button>
-        <p id="resultado"></p>
-    </div>
-    <div>
-        <h2>FCM</h2>
-        <button onclick="calcularFcm()">Calcular FCM</button>
-        <p id="resultado"></p>
-    </div>
-    <div>
-        <h2>CE</h2>
-        <button onclick="calcularCe()">Calcular CE</button>
-        <p id="resultado"></p>
+    <h1>CALCULADORAS</h1>
+    <div id="cajafuera">
+        <div class="caja">
+            <h2>Calculadora de [Índice de Masa Corporal]</h2>
+            <button class="centrado" onclick="calcularImc()">Calcular IMC</button>
+            <p id="resultado"></p>
+        </div>
+        <div class="caja">
+            <h2>Calculadora de [Frecuencia Cardíaca Máxima]</h2>
+            <button class="centrado" onclick="calcularFcm()">Calcular FCM</button>
+            <p id="resultado2"></p>
+        </div>
+        <div class="caja">
+            <h2>Calculadora de [Categoría]</h2>
+            <button class="centrado" onclick="calcularCe()">Calcular CE</button>
+            <p id="resultado3"></p>
+        </div>
     </div>
 </body>
 </html>
